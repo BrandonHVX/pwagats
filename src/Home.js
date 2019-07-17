@@ -15,7 +15,7 @@ const Wrapper = styled.header`
 		transition: all 0.3s ease-in-out;
 		z-index: 100;
 		&:hover {
-			color: white;
+			color: red;
 		}
 	}
 	@media (max-width: '600px') {
@@ -50,7 +50,7 @@ const Name = styled.div`
 		font-weight: 700;
 		&:hover,
 		&:focus {
-			color: #444;
+			color: red;
 			text-decoration: none;
 		}
 	}
@@ -81,7 +81,7 @@ const SocialMedia = styled.div`
 `;
 
 const styles = {
-	width: '90px'
+	width: '70px'
 };
 
 export default function Home() {

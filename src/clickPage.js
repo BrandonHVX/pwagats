@@ -4,9 +4,9 @@ import { useTransition, animated } from 'react-spring';
 import './style.css';
 
 const pages = [
-	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'white' }}>A</animated.div>,
-	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'white' }}>B</animated.div>,
-	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'white' }}>C</animated.div>
+	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>A</animated.div>,
+	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>B</animated.div>,
+	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>C</animated.div>
 ];
 
 export default function Click() {
