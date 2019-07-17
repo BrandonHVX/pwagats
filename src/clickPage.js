@@ -5,8 +5,16 @@ import './style.css';
 
 const pages = [
 	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>A</animated.div>,
-	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>B</animated.div>,
-	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>C</animated.div>
+
+	({ style }) => (
+		<animated.div style={{ ...style, height: '100%', color: 'black', background: 'red' }}>B</animated.div>
+	),
+
+	({ style }) => (
+		<animated.div style={{ ...style, color: 'black', background: 'red' }}>
+			Position the navbar at the top of the page{' '}
+		</animated.div>
+	)
 ];
 
 export default function Click() {

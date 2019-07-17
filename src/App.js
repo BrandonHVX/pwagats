@@ -9,8 +9,12 @@ import Layout from './Layout';
 function App() {
 	return (
 		<div className="App">
-			<Home />
-			<ClickPage />
+			<div className="App-header">
+				<Home />
+			</div>
+			<div className="App-body">
+				<ClickPage />
+			</div>
 		</div>
 	);
 }
