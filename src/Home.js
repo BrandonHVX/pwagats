@@ -82,10 +82,11 @@ const SocialMedia = styled.div`
 export default function Home() {
 	return (
 		<Wrapper>
-			<Nav>HELLO</Nav>
-			<Name>
+			<Nav>
+				HELLO
 				<img src={mdgblack} width={60} />
-			</Name>
+			</Nav>
+
 			<SocialMedia>
 				<a
 					href="https://www.instagram.com/lekoarts.de"
