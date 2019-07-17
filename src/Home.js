@@ -79,13 +79,18 @@ const SocialMedia = styled.div`
 		order: 3;
 	}
 `;
+
+const styles = {
+	width: '90px'
+};
+
 export default function Home() {
 	return (
 		<Wrapper>
 			<Nav>HELLO</Nav>
-			<Name>
-				<img src={mdgblack} width={60} />
-			</Name>
+
+			<img src={mdgblack} style={styles} />
+
 			<SocialMedia>
 				<a
 					href="https://www.instagram.com/lekoarts.de"
