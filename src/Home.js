@@ -28,7 +28,7 @@ const Nav = styled.nav`
 	display: flex;
 	flex: 1;
 	justify-content: flex-start;
-	padding: 2rem;
+	padding: 1rem;
 	a:not(:first-child) {
 		margin-left: 1rem;
 	}
@@ -65,7 +65,7 @@ const SocialMedia = styled.div`
 	display: flex;
 	flex: 1;
 	justify-content: flex-end;
-	padding: 2rem;
+	padding: 1rem;
 	a {
 		font-size: 1.25rem;
 		line-height: 20px;
