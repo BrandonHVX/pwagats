@@ -1,6 +1,7 @@
 import React from 'react';
-import Lottie from 'lottie-react-web';
-import animation from './data4.json';
+import Lottie from 'react-lottie';
+import { bounce } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
 import musicbg from './musicbg.mp4';
 
 export default function Music() {
@@ -8,19 +9,13 @@ export default function Music() {
 		<header class="v-header container">
 			<div class="fullscreen-video-wrap">
 				<div class="fullscreen-video-wrap">
-					<video src={musicbg} class="videoInsert" autoplay="true" loop="true" muted="true">
+					<video playsInline src={musicbg} class="videoInsert" autoplay="true" loop="true" muted="true">
 						{' '}
 					</video>
 				</div>
 			</div>
 			<div class="header-overlay" />
-			<div class="header-content">
-				<Lottie
-					options={{
-						animationData: animation
-					}}
-				/>
-			</div>
+			<div class="header-content" />
 		</header>
 	);
 }

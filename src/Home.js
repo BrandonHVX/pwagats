@@ -81,7 +81,7 @@ const SocialMedia = styled.div`
 `;
 
 const styles = {
-	width: '70px'
+	width: '60px'
 };
 
 export default function Home() {
@@ -93,7 +93,7 @@ export default function Home() {
 
 			<SocialMedia>
 				<a
-					href="https://www.instagram.com/lekoarts.de"
+					href="https://www.instagram.com/milqdagame"
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="Instagram"
