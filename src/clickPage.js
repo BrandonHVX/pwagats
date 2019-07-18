@@ -2,13 +2,16 @@ import { render } from 'react-dom';
 import React, { useState, useCallback } from 'react';
 import { useTransition, animated } from 'react-spring';
 import './style.css';
+import Music from './Music';
 
 const pages = [
-	({ style }) => <animated.div style={{ ...style, color: 'black', background: 'red' }}>A</animated.div>,
-
 	({ style }) => (
-		<animated.div style={{ ...style, height: '100%', color: 'black', background: 'red' }}>B</animated.div>
+		<animated.div style={{ ...style, color: 'black' }}>
+			<Music />
+		</animated.div>
 	),
+
+	({ style }) => <animated.div style={{ ...style, height: '100%', color: 'black' }}>B</animated.div>,
 
 	({ style }) => (
 		<animated.div style={{ ...style, color: 'black', background: 'red' }}>
