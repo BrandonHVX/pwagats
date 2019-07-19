@@ -11,7 +11,7 @@ import mdglogo from "./mdgblack.png";
 
 function App() {
 	return (
-<Router>
+
 <div class="wrapper">
 		<header class="header">             
 
@@ -38,15 +38,15 @@ function App() {
     
    </div>
 
-</div>
+
 {/* <Route exact path="/" component={Home} />
 <Route path="/music" component={About} />
 <Route path="/film" component={Topics} />
 <Route path="/marketing" component={Topics} />
 <Route path="/managment" component={Topics} /> */}
+</div>
 
 
-</Router>
 	);
 }
 
