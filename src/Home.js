@@ -65,15 +65,16 @@ const SocialMedia = styled.div`
 	display: flex;
 	flex: 1;
 	justify-content: flex-end;
-	padding: 1rem;
+	padding: 0.1rem;
 	a {
-		font-size: 1.25rem;
+		font-size: 2vh;
 		line-height: 20px;
 	}
 	a:not(:first-child) {
 		margin-left: 1rem;
 	}
 	@media (max-width: '600px') {
+		
 	}
 	@media (max-width: '400px') {
 		order: 3;
