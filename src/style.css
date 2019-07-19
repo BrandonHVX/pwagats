@@ -1,73 +1,21 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin-top: 70px;
+}
+.item {
+	margin: 5px;
+	width: 405px;
+}
 .wrapper {
 	display: flex;
-	flex-flow: row wrap;
-	font-weight: bold;
-	text-align: center;
-}
-
-.wrapper > * {
-	padding: 10px;
-	flex: 1 100%;
+	justify-content: center;
 }
 
 .header {
-	background: rgb(255, 255, 255);
-}
-
-.footer {
-	background: lightgreen;
-	height: 30vh;
-	background-image: url("./t-shirt.jpg");
-	background-size: 180%;
-}
-
-.main {
-	text-align: left;
-	background-image: url("./mixboard.jpg");
-	background-size: 180%;
-	background-position: bottom;
-	height: 30vh;
-}
-
-.aside-1 {
-	background-image: url("./film.jpg");
-	background-size: 180%;
-	height: 30vh;
-}
-
-.aside-2 {
-	background-image: url("./biz.jpg");
-	background-size: 180%;
-	background-position: center;
-	height: 30vh;
-}
-
-@media all and (min-width: 800px) {
-	.aside {
-		flex: 2 0 0;
-	}
-}
-
-@media all and (min-width: 900px) {
-	.aside-1 {
-		order: 1;
-	}
-
-	.main {
-		flex: 2 0px;
-	}
-
-	.main {
-		order: 1;
-	}
-	.aside-2 {
-		order: 2;
-	}
-	.footer {
-		order: 4;
-	}
-}
-
-body {
-	padding: 0em;
+	background: white;
+	position: fixed;
+	width: 90%;
 }

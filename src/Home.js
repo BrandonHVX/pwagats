@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaInstagram, FaBehance, FaDribbble } from 'react-icons/fa';
+import { FaInstagram, FaBehance, FaDribbble,FaTwitterSquare, FaRegEnvelope} from 'react-icons/fa';
 import mdgblack from './mdgblack.png';
 
 const Wrapper = styled.header`
@@ -31,6 +31,10 @@ const Nav = styled.nav`
 	padding: 1rem;
 	a:not(:first-child) {
 		margin-left: 1rem;
+		font-size: 2rem;
+	}
+	a {
+		font-size: 2rem;
 	}
 	@media (max-width: '600px') {
 		padding: 0 1rem;
@@ -45,7 +49,7 @@ const Name = styled.div`
 	flex: 1;
 	justify-content: center;
 	a {
-		font-size: 1.25rem;
+		font-size: 2rem;
 		font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 		font-weight: 700;
 		&:hover,
@@ -65,9 +69,9 @@ const SocialMedia = styled.div`
 	display: flex;
 	flex: 1;
 	justify-content: flex-end;
-	padding: 0.1rem;
+	padding: 1rem;
 	a {
-		font-size: 2vh;
+		font-size: 2rem;
 		line-height: 20px;
 	}
 	a:not(:first-child) {
@@ -88,7 +92,17 @@ const styles = {
 export default function Home() {
 	return (
 		<Wrapper>
-			<Nav>HELLO</Nav>
+			<Nav>
+			<a
+					href="https://www.instagram.com/milqdagame"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Instagram"
+				>
+					< FaRegEnvelope />
+				</a>
+
+			</Nav>
 
 			<img src={mdgblack} style={styles} />
 
@@ -107,10 +121,10 @@ export default function Home() {
 					rel="noopener noreferrer"
 					aria-label="Behance"
 				>
-					<FaBehance />
+					<FaTwitterSquare />
 				</a>
 				<a href="https://dribbble.com/LeKoArts" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
-					<FaDribbble />
+				< FaRegEnvelope />
 				</a>
 			</SocialMedia>
 		</Wrapper>
